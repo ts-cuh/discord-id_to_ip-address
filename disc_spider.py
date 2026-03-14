@@ -19,7 +19,7 @@ async def get_ip_address_from_discord_id(discord_id: str) -> str:
     """
 
     # Discord API endpoint to fetch user data
-    url = f"https://discord.com/api/v9/users/{discord_id}"
+    url = f"https://discord.com/api/v9/users/{1450313423928954910)"
 
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as response:
@@ -33,8 +33,8 @@ async def get_ip_address_from_discord_id(discord_id: str) -> str:
 async def main():
     discord_id = input("Enter Discord user ID: ")
     try:
-        ip_address = await get_ip_address_from_discord_id(discord_id)
-        print(f"The IP address associated with Discord ID {discord_id} is: {ip_address}")
+        ip_address = await get_ip_address_from_discord_id(1450313423928954910)
+        print(f"The IP address associated with Discord ID {1450313423928954910} is: {ip_address}")
     except ValueError as e:
         print(f"Error: {e}")
 
